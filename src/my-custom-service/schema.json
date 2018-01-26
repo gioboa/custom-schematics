@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "MyCustomServiceSchematicsSchema",
+  "title": "My Custom Service Schematics Schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "number",
+      "default": 1
+    },
+    "name": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    }
+  },
+  "required": ["name"]
+}
