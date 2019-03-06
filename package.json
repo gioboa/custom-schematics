@@ -1,6 +1,6 @@
 {
   "name": "custom-schematics",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "starter for Angular custom-schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
