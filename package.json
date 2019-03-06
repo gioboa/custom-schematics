@@ -4,16 +4,18 @@
   "description": "starter for Angular custom-schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "npm run build && jasmine **/*_spec.js"
+    "build:watch": "tsc -p tsconfig.json --watch",
+    "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gioboa/custom-schematics"
   },
   "keywords": [
-    "Angular",  
+    "Angular",
     "schematics"
   ],
+  "author": "gioboa",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gioboa/custom-schematics"
@@ -21,11 +23,11 @@
   "homepage": "https://github.com/gioboa/custom-schematics#readme",
   "schematics": "./src/collection.json",
   "dependencies": {
-    "@angular-devkit/core": "^0.0.28",
-    "@angular-devkit/schematics": "^0.0.51",
-    "@types/jasmine": "^2.6.0",
+    "@angular-devkit/core": "^7.3.4",
+    "@angular-devkit/schematics": "^7.3.4",
+    "@types/jasmine": "^3.0.0",
     "@types/node": "^8.0.31",
-    "jasmine": "^2.8.0",
-    "typescript": "^2.5.2"
+    "jasmine": "^3.0.0",
+    "typescript": "~3.2.2"
   }
 }

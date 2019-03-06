@@ -4,15 +4,21 @@
   "title": "My Custom Service Schematics Schema",
   "type": "object",
   "properties": {
-    "index": {
-      "type": "number",
-      "default": 1
-    },
     "name": {
-      "type": "string"
+      "type": "string",
+      "description": "Service name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
     },
     "path": {
-      "type": "string"
+      "type": "string",
+      "description": "File path",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      }
     }
   },
   "required": ["name"]
